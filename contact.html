@@ -4,169 +4,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
 </head>
 <body>
     
-    <!-- Section Nav-->
-    <nav>
-        <div class="flex ">
-            <div>
-                <!-- logo-->
-                <div>
-                    <img src="" alt="" srcset="">
+    <!-- Section Nav-->    
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+            
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-blue-600 rounded flex items-center justify-center text-white font-bold">EA</div>
+                    <span class="text-xl font-bold text-gray-900 tracking-tight">Espoir d'Afrique</span>
                 </div>
-                <p>Espoir d'Afrique</p>
-            </div>
-            <div>
-                <!-- Menu -->
-                <a href="">Accueil</a>
-                <a href="">A propos</a>
-                <a href="">Services</a>
-                <a href="">GreenKin</a>
-                <a href="">Contact</a>
-            </div>
-            <div>
-                <a href="">Devis gratuit</a>
+
+                <div class="hidden md:flex space-x-8 font-medium text-gray-700">
+                    <a href="index.html" class="hover:text-blue-600 transition">Accueil</a>
+                    <a href="apropos.html" class="hover:text-blue-600 transition">À propos</a>
+                    <a href="services.html" class="hover:text-blue-600 transition">Services</a>
+                    <a href="greenkin.html" class="hover:text-blue-600 transition">GreenKin</a>
+                    <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700 transition shadow-lg">Devis gratuit</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
             </div>
         </div>
 
-        <!-- Bouton humburger -->
-        <div>
-            <!--ouvrir le menu-->
-            <a href=""></a>
-
-            <!-- Fermer le menu-->
-            <a href=""></a>
-        </div>
-
-        <!-- Menu mobile -->
-        <div>
-            <div>
-                <!-- logo-->
-                <div>
-                    <img src="" alt="" srcset="">
-                </div>
-                <p>Espoir d'Afrique</p>
-            </div>
-            <div>
-                <!-- Menu -->
-                <a href="">Accueil</a>
-                <a href="">A propos</a>
-                <a href="">Services</a>
-                <a href="">GreenKin</a>
-                <a href="">Contact</a>
-            </div>
-            <div>
-                <a href="">Devis gratuit</a>
-            </div>        
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-50 border-t py-4 px-4 space-y-4">
+            <a href="index.html" class="block hover:text-blue-600 py-2">Accueil</a>
+            <a href="apropos.html" class="block hover:text-blue-600 py-2">À propos</a>
+            <a href="services.html" class="block hover:text-blue-600 py-2">Services</a>
+            <a href="greenkin.html" class="block hover:text-blue-600 py-2">GreenKin</a>
+            <a href="contact.html" class="block hover:text-blue-600 py-2">Contact</a>
+            <a href="contact.html" class="block bg-blue-600 text-white text-center py-3 rounded-lg font-bold">Devis gratuit</a>
         </div>
     </nav>
 
+    <script>
+        // Script simple pour basculer le menu mobile
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
     <!-- Header -->
-    <header>
-        <!-- Image de fond -->
-        <div>
-            <img src="" alt="" srcset="">
+    <header class="relative h-[350px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1596524430615-b46618d3637e" alt="Contactez Espoir Afrique" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gray-900/70"></div>
         </div>
-        <div>
-            <h3>Nous contacter</h3>
-            <p>Vous avez besoin d'un devis ou autre communication? envoyez nous un message.</p>
+
+        <div class="relative z-10 text-center px-6 text-white">
+            <h3 class="text-blue-400 font-bold uppercase tracking-widest text-sm mb-3">Besoin d'aide ?</h3>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Contactez-nous</h1>
+            <p class="text-gray-200 max-w-lg mx-auto text-lg">
+                Vous avez une question, besoin d'un devis gratuit ou d'une intervention rapide ? Envoyez-nous un message, nous vous répondrons dans les plus brefs délais.
+            </p>
         </div>
     </header>
 
     <!-- Contact -->
-    <section class="flex">
-        <!-- Nos coordonnees -->
-        <div>
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+            
             <div>
-                <p>Adresse: </p>
-                <p>Telephone: +243 983671853 / 829640349</p>
-                <p>Email: info@espoir-afrique.com</p>
-                <p>Zone d'intervention: Toutes les communes de Kinshasa</p>
-            </div>
-            <div>
-                <p>Nous suivre</p>
-                <div class="flex">
-                    <!--Facebook-->
-                    <a href="">
-                        <div><i></i></div>
-                    </a>
-                    <!--Instagram-->
-                    <a href="">
-                        <div><i></i></div>
-                    </a>
-                    <!--Whatsapp-->
-                    <a href="">
-                        <div><i></i></div>
-                    </a>
+                <h3 class="text-3xl font-extrabold text-gray-900 mb-8">Informations de contact</h3>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <span class="text-2xl mr-4">📍</span>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Adresse</h4>
+                            <p class="text-gray-600">Kinshasa, République Démocratique du Congo</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-2xl mr-4">📞</span>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Téléphone</h4>
+                            <p class="text-gray-600">+243 983 671 853 / +243 82 964 0349</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-2xl mr-4">✉️</span>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Email</h4>
+                            <p class="text-gray-600">info@espoir-afrique.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-2xl mr-4">🌍</span>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Zone d'intervention</h4>
+                            <p class="text-gray-600">Couverture complète de toutes les communes de Kinshasa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <p class="font-bold text-gray-900 mb-4">Nous suivre</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition">FB</a>
+                        <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-pink-600 hover:text-white transition">IG</a>
+                        <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-green-600 hover:text-white transition">WA</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div>
-            <h5>Envoyez un message</h5>
-            <form action="" method="post">
-                
-            </form>
+
+            <div class="bg-gray-50 p-8 md:p-10 rounded-3xl">
+                <h5 class="text-2xl font-bold mb-6 text-gray-900">Envoyez un message</h5>
+                <form action="#" method="post" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Nom complet</label>
+                        <input type="text" name="name" required placeholder="Votre nom complet" class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Email</label>
+                        <input type="email" name="email" required placeholder="Votre adresse email" class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Téléphone</label>
+                        <input type="tel" name="phone" required placeholder="+243 XXX XXX XXX" class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Objet de votre demande</label>
+                        <select name="service" required class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-white transition">
+                            <option value="">Sélectionnez un service</option>
+                            <option value="nettoyage">Entretien et Nettoyage</option>
+                            <option value="techniques">Surfaces Extérieures et Techniques</option>
+                            <option value="espaces-verts">Espaces Verts</option>
+                            <option value="pest-control">Pest Control : Solutions Anti-Nuisibles</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Votre message</label>
+                        <textarea name="message" rows="4" required placeholder="Dites-nous en plus sur votre projet..." class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-600 transition"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg mt-2">
+                        Envoyer le message
+                    </button>
+                </form>
+            </div>
         </div>
     </section>
 
-    
     <!-- Footer -->
-    <footer>
-        <div class="flex">
+    <footer class="bg-gray-950 text-white pt-16 pb-8 mt-18">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
             <div>
-                <h3>Espoir d'Afrique</h3>
-                <p></p>
+                <h3 class="text-xl font-bold mb-6 text-blue-500">Espoir Afrique</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    Votre partenaire propreté à Kinshasa depuis 2014. Nous allions savoir-faire local et 
+                    standards internationaux pour un environnement impeccable.
+                </p>
             </div>
+
             <div>
-                <h3>Navigation</h3>
-                <div>
-                    <a href="">Accueil</a>
-                    <a href="">A propos</a>
-                    <a href="">Services</a>
-                    <a href="">GreenKin</a>
-                    <a href="">Contact</a>
-                </div>
+                <h3 class="text-lg font-bold mb-6">Navigation</h3>
+                <ul class="space-y-3 text-gray-400">
+                    <li><a href="#" class="hover:text-blue-400 transition">Accueil</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">À propos</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Services</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">GreenKin</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Contact</a></li>
+                </ul>
             </div>
+
             <div>
-                <h3>Legal</h3>
-                <div>
-                    <a href="">Mentions legal</a>
-                </div>
+                <h3 class="text-lg font-bold mb-6">Légal</h3>
+                <ul class="space-y-3 text-gray-400">
+                    <li><a href="#" class="hover:text-blue-400 transition">Mentions légales</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Politique de confidentialité</a></li>
+                </ul>
             </div>
+
             <div>
-                <h3>Localisation</h3>
-                <div>
-                    <p>
-                        Adresse: 
-                    </p>
-                    <p>
-                        Telephone:
-                    </p>
-                    <p>
-                        Email:
-                    </p>
+                <h3 class="text-lg font-bold mb-6">Contact</h3>
+                <div class="space-y-3 text-gray-400 text-sm">
+                    <p>📍 Kinshasa, RDC</p>
+                    <p>📞 +243 983 671 853</p>
+                    <p>📞 +243 82 964 0349</p>
+                    <p>✉️ info@espoir-afrique.com</p>
                 </div>
-                <!-- Lien reseaux sociaux-->
-                <div>
-                    <div>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <a href=""></a>
-                    </div>
+                
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">FB</a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">IG</a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">WA</a>
                 </div>
             </div>
         </div>
 
-        <div>            
-            <p>&copy; 2026 CIDEP Institution. Tous droits réservés.</p>
+        <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Espoir Afrique. Tous droits réservés.</p>
         </div>
     </footer>
 

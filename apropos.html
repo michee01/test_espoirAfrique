@@ -4,201 +4,257 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
 </head>
 <body>
     
-    <!-- Section Nav-->
-    <nav>
-        <div class="flex ">
-            <div>
-                <!-- logo-->
-                <div>
-                    <img src="" alt="" srcset="">
+    <!-- Section Nav-->    
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+            
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-blue-600 rounded flex items-center justify-center text-white font-bold">EA</div>
+                    <span class="text-xl font-bold text-gray-900 tracking-tight">Espoir d'Afrique</span>
                 </div>
-                <p>Espoir d'Afrique</p>
-            </div>
-            <div>
-                <!-- Menu -->
-                <a href="">Accueil</a>
-                <a href="">A propos</a>
-                <a href="">Services</a>
-                <a href="">GreenKin</a>
-                <a href="">Contact</a>
-            </div>
-            <div>
-                <a href="">Devis gratuit</a>
+
+                <div class="hidden md:flex space-x-8 font-medium text-gray-700">
+                    <a href="index.html" class="hover:text-blue-600 transition">Accueil</a>
+                    <a href="apropos.html" class="hover:text-blue-600 transition">À propos</a>
+                    <a href="services.html" class="hover:text-blue-600 transition">Services</a>
+                    <a href="greenkin.html" class="hover:text-blue-600 transition">GreenKin</a>
+                    <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700 transition shadow-lg">Devis gratuit</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
             </div>
         </div>
 
-        <!-- Bouton humburger -->
-        <div>
-            <!--ouvrir le menu-->
-            <a href=""></a>
-
-            <!-- Fermer le menu-->
-            <a href=""></a>
-        </div>
-
-        <!-- Menu mobile -->
-        <div>
-            <div>
-                <!-- logo-->
-                <div>
-                    <img src="" alt="" srcset="">
-                </div>
-                <p>Espoir d'Afrique</p>
-            </div>
-            <div>
-                <!-- Menu -->
-                <a href="">Accueil</a>
-                <a href="">A propos</a>
-                <a href="">Services</a>
-                <a href="">GreenKin</a>
-                <a href="">Contact</a>
-            </div>
-            <div>
-                <a href="">Devis gratuit</a>
-            </div>        
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-50 border-t py-4 px-4 space-y-4">
+            <a href="index.html" class="block hover:text-blue-600 py-2">Accueil</a>
+            <a href="apropos.html" class="block hover:text-blue-600 py-2">À propos</a>
+            <a href="services.html" class="block hover:text-blue-600 py-2">Services</a>
+            <a href="greenkin.html" class="block hover:text-blue-600 py-2">GreenKin</a>
+            <a href="contact.html" class="block hover:text-blue-600 py-2">Contact</a>
+            <a href="contact.html" class="block bg-blue-600 text-white text-center py-3 rounded-lg font-bold">Devis gratuit</a>
         </div>
     </nav>
 
+    <script>
+        // Script simple pour basculer le menu mobile
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
     <!-- Historique -->
-    <section>
-        <!-- Une photo de l'équipe (ou du fondateur) pour humaniser la marque. -->
-        <div class="flex">
-            <!-- Image de fond -->
-            <div>
-                <img src="" alt="" srcset="">
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+            
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902" alt="Équipe Espoir Afrique" class="rounded-3xl shadow-2xl w-full h-[500px] object-cover">
+                <div class="absolute -bottom-8 -right-8 bg-blue-600 text-white p-8 rounded-2xl shadow-lg hidden md:block">
+                <p class="text-4xl font-extrabold">10+</p>
+                <p class="text-sm uppercase tracking-widest">Années de succès</p>
+                </div>
             </div>
-            <!-- Texte -->
+
             <div>
-                <h3></h3>
-                <p></p>
-                <p></p>
+                <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-2">Notre Histoire</h2>
+                <h3 class="text-4xl font-extrabold text-gray-900 mb-6">Plus qu'un nettoyage, une promesse de qualité depuis 2014</h3>
+                
+                <div class="space-y-6 text-gray-600 leading-relaxed">
+                <p>
+                    Tout a commencé en 2014 avec une vision simple : transformer le secteur de la propreté à Kinshasa en alliant rigueur locale et standards internationaux. 
+                </p>
+                <p>
+                    Chez <strong>Espoir Afrique</strong>, nous croyons que votre environnement est le reflet de votre ambition. C'est pourquoi, au fil de ces dix années, nous avons bâti une équipe soudée, formée aux techniques les plus pointues pour garantir un cadre de vie et de travail sain, propre et inspirant.
+                </p>
+                <p>
+                    Aujourd'hui, nous sommes fiers de servir toutes les communes de Kinshasa, portés par une mission unique : votre satisfaction totale et le bien-être de vos espaces.
+                </p>
+                </div>
+            </div>
+            
             </div>
         </div>
     </section>
 
     <!-- Engagement -->
-    <section>
-        <!-- Mettez en avant le slogan et votre ancrage à Kinshasa depuis 2014. -->
-        <!-- 10 ans d'expérience (depuis 2014), équipe formée et discrète, utilisation de produits écologiques, et matériel moderne.  -->
-        <!-- Garantie de satisfaction à 100%, flexibilité des contrats (ponctuels ou réguliers), et devis gratuit avec transparence sur les tarifs.  -->
-        <div>
-            <h4>Engagement</h4>
-            <p></p>
-        </div>
-        <div class="grid lg:grid-cols-3"> 
-            <div>
-                <h5></h5>
-                <p></p>
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-2">Notre engagement</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900">Plus qu'un service, une promesse de qualité</h3>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Ancrés à Kinshasa depuis 2014, notre slogan <em>"Votre confort commence par un environnement propre"</em> guide chacune de nos interventions.
+                </p>
             </div>
-            <div>
-                <h5></h5>
-                <p></p>
-            </div>
-            <div>
-                <h5></h5>
-                <p></p>
+
+            <div class="grid md:grid-cols-3 gap-8"> 
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-blue-600">
+                    <h5 class="text-xl font-bold mb-4 text-gray-900">Expertise & Savoir-faire</h5>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        10 ans d'expérience au service de Kinshasa, avec une équipe rigoureusement formée, discrète et équipée de matériel moderne de pointe.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-blue-600">
+                    <h5 class="text-xl font-bold mb-4 text-gray-900">Respect de l'Environnement</h5>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Nous privilégions l'utilisation de produits écologiques, garantissant l'efficacité du nettoyage tout en préservant votre santé et la planète.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-blue-600">
+                    <h5 class="text-xl font-bold mb-4 text-gray-900">Satisfaction Garantie</h5>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Une flexibilité totale avec des contrats ponctuels ou réguliers, un devis transparent et une garantie de satisfaction à 100%.
+                    </p>
+                </div>
+                
             </div>
         </div>
     </section>
 
     <!-- Nos valeurs -->
-    <section>
-        <!-- Texte court soulignant le mélange entre "savoir-faire local" et "standards internationaux -->
-        <!-- Garantie de satisfaction à 100%, flexibilité des contrats (ponctuels ou réguliers), et devis gratuit avec transparence sur les tarifs.  -->
-        <div>
-            <h4>Nos valeurs</h4>
-            <p></p>
-        </div>
-        <div class="grid lg:grid-cols-3">
-            <div>
-                <span></span>
-                <h5></h5>
-                <p></p>
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-2">Nos Valeurs</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900">L'excellence au cœur de notre métier</h3>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Nous fusionnons notre expertise locale avec des exigences de qualité mondiales pour vous offrir un service inégalé à Kinshasa.
+                </p>
             </div>
-            <div>
-                <span></span>
-                <h5>savoir-faire local</h5>
-                <p></p>
+
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                
+                <div class="p-8 border border-gray-100 rounded-3xl hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">⭐</div>
+                    <h5 class="text-xl font-bold mb-4">Satisfaction Garantie</h5>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Nous nous engageons sur le résultat. Votre tranquillité d'esprit est notre priorité avec une garantie de satisfaction à 100% sur toutes nos prestations.
+                    </p>
+                </div>
+
+                <div class="p-8 border border-gray-100 rounded-3xl hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">🌍</div>
+                    <h5 class="text-xl font-bold mb-4">Savoir-faire Local</h5>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Profondément ancrés à Kinshasa, nous comprenons parfaitement vos besoins spécifiques et nous adaptons nos services à chaque commune de la ville.
+                    </p>
+                </div>
+
+                <div class="p-8 border border-gray-100 rounded-3xl hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">🛡️</div>
+                    <h5 class="text-xl font-bold mb-4">Standards Internationaux</h5>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        De la gestion des contrats à la rigueur opérationnelle, nous appliquons des méthodes éprouvées pour garantir une propreté et une hygiène impeccables.
+                    </p>
+                </div>
             </div>
-            <div>
-                <span></span>
-                <h5>standards internationaux</h5>
-                <p></p>
+
+            <div class="mt-12 p-8 bg-blue-600 rounded-2xl text-white text-center flex flex-col md:flex-row items-center justify-center gap-6">
+                <p class="font-semibold text-lg">Besoin d'un accompagnement sur mesure ?</p>
+                <a href="#" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition shadow-sm">
+                    Devis gratuit & transparent
+                </a>
             </div>
         </div>
     </section>
 
     <!-- CTA -->
-    <section class="flex">
-        <div>
-            <h5></h5>
-            <p></p>
-        </div>
-        <div>
-            <a href="">Nos services</a>
-            <a href="">Contact</a>
+    <section class="py-16 bg-gray-950 mb-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="bg-blue-600 rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
+                
+                <div class="text-white text-center md:text-left">
+                    <h5 class="text-3xl md:text-4xl font-extrabold mb-4">Prêt pour un espace impeccable ?</h5>
+                    <p class="text-blue-100 text-lg opacity-90">
+                        Transformez vos espaces dès aujourd'hui. Demandez votre devis gratuit et sans engagement.
+                    </p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                    <a href="#" class="bg-white text-blue-700 px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition shadow-lg text-center">
+                        Nos services
+                    </a>
+                    <a href="#" class="bg-gray-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-black transition shadow-lg text-center">
+                        Contactez-nous
+                    </a>
+                </div>
+                
+            </div>
         </div>
     </section>
     
     <!-- Footer -->
-    <footer>
-        <div class="flex">
+    <footer class="bg-gray-950 text-white pt-16 pb-8 mt-18">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
             <div>
-                <h3>Espoir d'Afrique</h3>
-                <p></p>
+                <h3 class="text-xl font-bold mb-6 text-blue-500">Espoir Afrique</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    Votre partenaire propreté à Kinshasa depuis 2014. Nous allions savoir-faire local et 
+                    standards internationaux pour un environnement impeccable.
+                </p>
             </div>
+
             <div>
-                <h3>Navigation</h3>
-                <div>
-                    <a href="">Accueil</a>
-                    <a href="">A propos</a>
-                    <a href="">Services</a>
-                    <a href="">GreenKin</a>
-                    <a href="">Contact</a>
-                </div>
+                <h3 class="text-lg font-bold mb-6">Navigation</h3>
+                <ul class="space-y-3 text-gray-400">
+                    <li><a href="#" class="hover:text-blue-400 transition">Accueil</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">À propos</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Services</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">GreenKin</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Contact</a></li>
+                </ul>
             </div>
+
             <div>
-                <h3>Legal</h3>
-                <div>
-                    <a href="">Mentions legal</a>
-                </div>
+                <h3 class="text-lg font-bold mb-6">Légal</h3>
+                <ul class="space-y-3 text-gray-400">
+                    <li><a href="#" class="hover:text-blue-400 transition">Mentions légales</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Politique de confidentialité</a></li>
+                </ul>
             </div>
+
             <div>
-                <h3>Localisation</h3>
-                <div>
-                    <p>
-                        Adresse: 
-                    </p>
-                    <p>
-                        Telephone:
-                    </p>
-                    <p>
-                        Email:
-                    </p>
+                <h3 class="text-lg font-bold mb-6">Contact</h3>
+                <div class="space-y-3 text-gray-400 text-sm">
+                    <p>📍 Kinshasa, RDC</p>
+                    <p>📞 +243 983 671 853</p>
+                    <p>📞 +243 82 964 0349</p>
+                    <p>✉️ info@espoir-afrique.com</p>
                 </div>
-                <!-- Lien reseaux sociaux-->
-                <div>
-                    <div>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <a href=""></a>
-                    </div>
+                
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">FB</a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">IG</a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">WA</a>
                 </div>
             </div>
         </div>
 
-        <div>            
-            <p>&copy; 2026 CIDEP Institution. Tous droits réservés.</p>
+        <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Espoir Afrique. Tous droits réservés.</p>
         </div>
     </footer>
 

@@ -58,25 +58,6 @@
         });
     </script>
 
-    <!-- Header-->
-    <header class="relative w-full h-[350px] flex items-center justify-center overflow-hidden">
-        <!-- Image de fond avec effet de calque -->
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c" alt="Tarification GreenKin" class="w-full h-full object-cover">
-            <!-- Calque sombre pour la lisibilité -->
-            <div class="absolute inset-0 bg-gray-900/70"></div>
-        </div>
-
-        <!-- Contenu du header -->
-        <div class="relative z-10 text-center px-6">
-            <span class="text-green-500 font-bold uppercase tracking-widest text-sm mb-3 block">Transparence totale</span>
-            <h3 class="text-4xl md:text-5xl font-extrabold text-white">Nos tarifs</h3>
-            <p class="text-gray-300 mt-4 text-lg max-w-lg mx-auto">
-                Découvrez nos solutions adaptées à chaque besoin, conçues pour allier qualité de service et accessibilité.
-            </p>
-        </div>
-    </header>
-    
     <!-- Formules pour Particuliers -->
     <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-6">
@@ -166,7 +147,7 @@
             <!-- À propos -->
             <div>
                 <h3 class="text-2xl font-bold mb-6 text-green-500">GreenKin</h3>
-                <p class="text-gray-400 leading-relaxed">
+                <p class="text-gray-400 leading-relaxed text-justify">
                     La branche innovante d'Espoir Afrique. Nous transformons la gestion des déchets à Kinshasa grâce à des solutions technologiques et durables pour une ville plus propre.
                 </p>
             </div>
@@ -211,9 +192,18 @@
                 
                 <!-- Réseaux -->
                 <div class="flex space-x-4 mt-8">
-                    <a href="#" class="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center hover:bg-green-600 transition">FB</a>
-                    <a href="#" class="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center hover:bg-green-600 transition">IG</a>
-                    <a href="#" class="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center hover:bg-green-600 transition">WA</a>
+                    <!-- Facebook -->
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white hover:bg-green-600 transition-all duration-300">
+                        <i class="fab fa-facebook-f"></i> <!-- Assurez-vous d'avoir FontAwesome ou utilisez des SVG -->
+                    </a>
+                    <!-- Instagram -->
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white hover:bg-green-600 transition-all duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <!-- Twitter -->
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white hover:bg-green-600 transition-all duration-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
                 </div>
             </div>
         </div>

@@ -10,42 +10,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
 </head>
 <body>
-    
     <!-- Section Nav-->    
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-white shadow-md sticky top-0 z-50 font-sans">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
             
-                <div class="">
+                <div>
                     <a href="">
-                    <div class="w-26 h-16 bg-blue-400 rounded flex items-center justify-center text-white font-bold">
-                        <img src="images/GreenKin/Logo_Green_Kinshasa1.png" alt="" srcset="" 
-                        class="w-full h-full">
-                    </div>
-
+                        <div class="w-26 h-16 max-w-[154px] rounded flex items-center justify-center">
+                            <img src="images/GreenKin/Logo_Green_Kinshasa1.png" alt=""
+                                class="w-full h-full">
+                        </div>
                     </a>
                 </div>
 
-                <div class="hidden md:flex space-x-8 font-medium text-gray-700 font-semibold">
-                    <a href="greenkin.html" class="hover:text-blue-600 transition">Accueil</a>
-                    <a href="greenkin_offres.html" class="hover:text-blue-600 transition">Nos offres</a>
-                    <a href="greenkin_services.html" class="hover:text-blue-600 transition">Services</a>
-                    <a href="greenkin_contact.html" class="hover:text-blue-600 transition">Contact</a>
+                <div class="hidden md:flex space-x-8 font-medium text-[#0D4B4A]">
+                    <a href="greenkin.html" class="hover:text-[#136A33] transition duration-300">Accueil</a>
+                    <a href="greenkin_offres.html" class="hover:text-[#136A33] transition duration-300">Nos offres</a>
+                    <a href="greenkin_services.html" class="hover:text-[#136A33] transition duration-300">Services</a>
+                    <a href="greenkin_contact.html" class="hover:text-[#136A33] transition duration-300">Contact</a>
                 </div>
 
                 <div class="md:hidden">
-                    <button id="menu-btn" class="text-gray-800 focus:outline-none">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <button id="menu-btn" class="text-[#0D4B4A] focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7">
+                            </path>
+                        </svg>
                     </button>
                 </div>
             </div>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-50 border-t py-4 px-4 space-y-4 font-semibold">
-            <a href="greenkin.html" class="block hover:text-blue-600 py-2">Accueil</a>
-            <a href="greenkin_offres.html" class="block hover:text-blue-600 py-2">Nos offres</a>
-            <a href="greenkin_services.html" class="block hover:text-blue-600 py-2">Services</a>
-            <a href="greenkin_contact.html" class="block hover:text-blue-600 py-2">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-[#E8E8E8] border-t border-[#64B331] py-4 px-4 space-y-4 font-medium text-[#0D4B4A]">
+            <a href="greenkin.html" class="block hover:text-[#136A33] py-2 transition duration-300">Accueil</a>
+            <a href="greenkin_offres.html" class="block hover:text-[#136A33] py-2 transition duration-300">Nos offres</a>
+            <a href="greenkin_services.html" class="block hover:text-[#136A33] py-2 transition duration-300">Services</a>
+            <a href="greenkin_contact.html" class="block hover:text-[#136A33] py-2 transition duration-300">Contact</a>
         </div>
     </nav>
 
@@ -58,25 +60,32 @@
             menu.classList.toggle('hidden');
         });
     </script>
-    
+
     <!-- Section Hero -->
-    <section class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+    <section class="relative h-[90vh] flex items-center justify-center overflow-hidden font-sans">
         <div class="absolute inset-0 z-0">
             <img src="images/GreenKin/hero.jfif" alt="Nettoyage professionnel" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black/60"></div> </div>
+            <div class="absolute inset-0 bg-[#0D4B4A]/50"></div>
+        </div>
 
         <div class="relative z-10 text-center px-6 max-w-4xl text-white">
-            <h2 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-                GreenKin : l'innovation au service de <span class="text-green-600">votre environnement</span>.
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                GreenKin : l'innovation au service de
+                <span class="text-[#64B331]">votre environnement</span>.
             </h2>
-            <p class="text-lg md:text-xl mb-8 text-gray-200">
+
+            <p class="text-lg md:text-xl mb-8 text-[#E8E8E8] font-normal">
                 Propulsé par Espoir Afrique, GreenKin révolutionne la gestion de vos déchets à Kinshasa avec efficacité, simplicité et durabilité.
             </p>
+
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#services" class="bg-green-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold transition duration-300">
+                <a href="#services"
+                class="bg-[#136A33] hover:bg-[#64B331] text-white px-8 py-4 rounded-lg font-medium transition duration-300 shadow-lg">
                     Nos services
                 </a>
-                <a href="#contact" class="bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 rounded-lg font-bold transition duration-300">
+
+                <a href="#contact"
+                class="bg-[#E8E8E8] hover:bg-white text-[#0D4B4A] px-8 py-4 rounded-lg font-medium transition duration-300 shadow-lg">
                     Nous contacter
                 </a>
             </div>
@@ -84,16 +93,24 @@
     </section>
 
     <!-- Presentation de l'entreprise-->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-[#E8E8E8] font-sans">
         <div class="max-w-7xl mx-auto px-6">
+            
             <!-- Texte de présentation -->
             <div class="text-center mb-16">
-                <h2 class="text-green-600 font-bold uppercase tracking-widest text-sm mb-2">À propos de GreenKin</h2>
-                <h3 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-8">Plus qu'une collecte, un mouvement pour Kinshasa</h3>
-                <div class="max-w-3xl mx-auto space-y-6 text-lg text-gray-600 leading-relaxed">
+                <h2 class="text-[#64B331] font-bold uppercase tracking-widest text-sm mb-2">
+                    À propos de GreenKin
+                </h2>
+
+                <h3 class="text-3xl md:text-5xl font-bold text-[#0D4B4A] mb-8">
+                    Plus qu'une collecte, un mouvement pour Kinshasa
+                </h3>
+
+                <div class="max-w-3xl mx-auto space-y-6 text-lg text-[#0D4B4A]/80 leading-relaxed font-normal">
                     <p>
-                        <strong>GreenKin</strong> est la branche innovante de Espoir Afrique, forte de 10 ans d'expertise dans le secteur de la propreté à Kinshasa. Nous réinventons la gestion des déchets grâce à des solutions technologiques et écoresponsables, spécifiquement conçues pour répondre aux défis uniques de notre capitale.
+                        <strong class="font-bold text-[#136A33]">GreenKin</strong> est la branche innovante de Espoir Afrique, forte de 10 ans d'expertise dans le secteur de la propreté à Kinshasa. Nous réinventons la gestion des déchets grâce à des solutions technologiques et écoresponsables, spécifiquement conçues pour répondre aux défis uniques de notre capitale.
                     </p>
+
                     <p>
                         Notre vision dépasse le simple nettoyage : nous bâtissons un écosystème où chaque déchet est traité avec respect pour offrir une ville plus saine, plus verte et résolument moderne pour les générations futures.
                     </p>
@@ -102,63 +119,94 @@
 
             <!-- Galerie d'impact -->
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="group overflow-hidden rounded-3xl shadow-lg">
-                    <img src="images/GreenKin/camion1.JPG" alt="Technologie de collecte" class="w- h-80 object-cover transform group-hover:scale-105 transition duration-500">
+
+                <div class="group overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition duration-300">
+                    <img src="images/GreenKin/camion1.JPG"
+                        alt="Technologie de collecte"
+                        class="w- h-80 object-cover transform group-hover:scale-105 transition duration-500">
                 </div>
-                <div class="group overflow-hidden rounded-3xl shadow-lg">
-                    <img src="images/GreenKin/poubele.png" alt="Engagement écoresponsable" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500">
+
+                <div class="group overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition duration-300">
+                    <img src="images/GreenKin/poubele.png"
+                        alt="Engagement écoresponsable"
+                        class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500">
                 </div>
-                <div class="group overflow-hidden rounded-3xl shadow-lg">
-                    <img src="images/GreenKin/jeep1.JPG" alt="Modernisation de Kinshasa" class="w- h-full object-cover transform group-hover:scale-105 transition duration-500">
+
+                <div class="group overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition duration-300">
+                    <img src="images/GreenKin/jeep1.JPG"
+                        alt="Modernisation de Kinshasa"
+                        class="w- h-full object-cover transform group-hover:scale-105 transition duration-500">
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- Pourquoi choisir Greenkin services -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-white font-sans">
         <div class="max-w-7xl mx-auto px-6">
+
             <!-- Titre de la section -->
             <div class="text-center mb-16">
-                <h2 class="text-green-600 font-bold uppercase tracking-widest text-sm mb-2">Pourquoi nous choisir</h2>
-                <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900">L'excellence au service de Kinshasa</h3>
+                <h2 class="text-[#64B331] font-bold uppercase tracking-widest text-sm mb-2">
+                    Pourquoi nous choisir
+                </h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-[#0D4B4A]">
+                    L'excellence au service de Kinshasa
+                </h3>
             </div>
 
             <!-- Grille des avantages -->
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
+
                 <!-- Carte 1: Technologie -->
-                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 text-center">
-                    <div class="w-16 h-16 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">📱</div>
-                    <h4 class="text-xl font-bold mb-4">Technologie</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
+                <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 border border-[#E8E8E8] text-center hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-[#136A33]/10 text-[#136A33] rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">
+                        📱
+                    </div>
+                    <h4 class="text-xl font-bold text-[#0D4B4A] mb-4">
+                        Technologie
+                    </h4>
+                    <p class="text-[#0D4B4A]/80 text-sm leading-relaxed font-normal">
                         Plateforme digitale et application mobile pour un suivi en temps réel de vos collectes.
                     </p>
                 </div>
 
                 <!-- Carte 2: Éco-responsabilité -->
-                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 text-center">
-                    <div class="w-16 h-16 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">♻️</div>
-                    <h4 class="text-xl font-bold mb-4">Éco-responsabilité</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
+                <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 border border-[#E8E8E8] text-center hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-[#64B331]/10 text-[#64B331] rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">
+                        ♻️
+                    </div>
+                    <h4 class="text-xl font-bold text-[#0D4B4A] mb-4">
+                        Éco-responsabilité
+                    </h4>
+                    <p class="text-[#0D4B4A]/80 text-sm leading-relaxed font-normal">
                         Tri avancé et recyclage local pour réduire drastiquement votre impact environnemental.
                     </p>
                 </div>
 
                 <!-- Carte 3: Fiabilité -->
-                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 text-center">
-                    <div class="w-16 h-16 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">✅</div>
-                    <h4 class="text-xl font-bold mb-4">Fiabilité</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
+                <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 border border-[#E8E8E8] text-center hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-[#0D4B4A]/10 text-[#0D4B4A] rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">
+                        ✅
+                    </div>
+                    <h4 class="text-xl font-bold text-[#0D4B4A] mb-4">
+                        Fiabilité
+                    </h4>
+                    <p class="text-[#0D4B4A]/80 text-sm leading-relaxed font-normal">
                         Une logistique ponctuelle et rigoureuse héritée de 10 ans d'expertise locale.
                     </p>
                 </div>
 
                 <!-- Carte 4: Communauté -->
-                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 text-center">
-                    <div class="w-16 h-16 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">🤝</div>
-                    <h4 class="text-xl font-bold mb-4">Communauté</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
+                <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 border border-[#E8E8E8] text-center hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-[#136A33]/10 text-[#136A33] rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">
+                        🤝
+                    </div>
+                    <h4 class="text-xl font-bold text-[#0D4B4A] mb-4">
+                        Communauté
+                    </h4>
+                    <p class="text-[#0D4B4A]/80 text-sm leading-relaxed font-normal">
                         Solutions collectives et participatives pour transformer durablement vos quartiers.
                     </p>
                 </div>
@@ -168,51 +216,73 @@
     </section>
 
     <!-- Services -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-[#E8E8E8] font-sans">
         <div class="max-w-7xl mx-auto px-6">
+
             <!-- En-tête -->
             <div class="text-center mb-16">
-                <h2 class="text-green-600 font-bold uppercase tracking-widest text-sm mb-2">Nos Solutions</h2>
-                <h4 class="text-3xl md:text-4xl font-extrabold text-gray-900">Nos Services Complets</h4>
+                <h4 class="text-3xl md:text-4xl font-bold text-[#0D4B4A]">
+                    Nos Services Complets
+                </h4>
             </div>
 
             <div class="grid lg:grid-cols-3 gap-12 items-center">
-                
+
                 <!-- Colonne 1: Services de base -->
                 <div class="space-y-8">
-                    <div class="bg-gray-50 p-6 rounded-2xl border-l-4 border-green-600">
-                        <h5 class="text-xl font-bold mb-2">Collecte Régulière</h5>
-                        <p class="text-gray-600 text-sm leading-relaxed">
+
+                    <div class="bg-white p-6 rounded-2xl border-l-4 border-[#136A33] shadow-md hover:shadow-xl transition-all duration-300">
+                        <h5 class="text-xl font-bold text-[#0D4B4A] mb-2">
+                            Collecte Régulière
+                        </h5>
+
+                        <p class="text-[#0D4B4A]/80 text-sm leading-relaxed font-normal">
                             Un service de ramassage fiable et planifié pour maintenir vos espaces propres au quotidien, grâce à notre suivi digital.
                         </p>
                     </div>
-                    <div class="bg-gray-50 p-6 rounded-2xl border-l-4 border-green-600">
-                        <h5 class="text-xl font-bold mb-2">Tri Sélectif</h5>
-                        <p class="text-gray-600 text-sm leading-relaxed">
+
+                    <div class="bg-white p-6 rounded-2xl border-l-4 border-[#136A33] shadow-md hover:shadow-xl transition-all duration-300">
+                        <h5 class="text-xl font-bold text-[#0D4B4A] mb-2">
+                            Tri Sélectif
+                        </h5>
+
+                        <p class="text-[#0D4B4A]/80 text-sm leading-relaxed font-normal">
                             Accompagnement dans le tri de vos déchets pour valoriser les matières recyclables et réduire votre empreinte écologique.
                         </p>
                     </div>
+
                 </div>
 
                 <!-- Colonne 2: Image centrale (mise en valeur) -->
                 <div class="hidden lg:block">
-                    <img src="images/GreenKin/poubele.png" alt="Services GreenKin" class="rounded-3xl shadow-2xl">
+                    <img src="images/GreenKin/poubele.png"
+                        alt="Services GreenKin"
+                        class="rounded-3xl shadow-2xl border-4 border-white">
                 </div>
 
                 <!-- Colonne 3: Services complémentaires -->
                 <div class="space-y-8">
-                    <div class="bg-gray-50 p-6 rounded-2xl border-l-4 border-green-600">
-                        <h5 class="text-xl font-bold mb-2">Désinfection Professionnelle</h5>
-                        <p class="text-gray-600 text-sm leading-relaxed">
+
+                    <div class="bg-white p-6 rounded-2xl border-l-4 border-[#64B331] shadow-md hover:shadow-xl transition-all duration-300">
+                        <h5 class="text-xl font-bold text-[#0D4B4A] mb-2">
+                            Désinfection Professionnelle
+                        </h5>
+
+                        <p class="text-[#0D4B4A]/80 text-sm leading-relaxed font-normal">
                             Assurez un environnement sain pour votre famille ou vos employés.
                         </p>
                     </div>
-                    <div class="bg-gray-50 p-6 rounded-2xl border-l-4 border-green-600">
-                        <h5 class="text-xl font-bold mb-2">Suivi Digital Simplifié</h5>
-                        <p class="text-gray-600 text-sm leading-relaxed">
+
+                    <div class="bg-white p-6 rounded-2xl border-l-4 border-[#64B331] shadow-md hover:shadow-xl transition-all duration-300">
+                        <h5 class="text-xl font-bold text-[#0D4B4A] mb-2">
+                            Suivi Digital Simplifié
+                        </h5>
+
+                        <p class="text-[#0D4B4A]/80 text-sm leading-relaxed font-normal">
                             Prenez le contrôle total de vos services de propreté.
                         </p>
                     </div>
+
                 </div>
 
             </div>
@@ -220,100 +290,240 @@
     </section>
 
     <!-- Formules pour Particuliers -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-white font-sans">
         <div class="max-w-7xl mx-auto px-6">
+
             <!-- Titre -->
             <div class="text-center mb-16">
-                <h2 class="text-green-600 font-bold uppercase tracking-widest text-sm mb-2">Nos Tarifs</h2>
-                <h4 class="text-3xl md:text-4xl font-extrabold text-gray-900">Formules pour Particuliers</h4>
+
+                <h4 class="text-3xl md:text-4xl font-bold text-[#0D4B4A]">
+                    Formules pour Particuliers
+                </h4>
             </div>
 
             <!-- Grille des prix -->
             <div class="grid md:grid-cols-3 gap-8 items-start">
-                
+
                 <!-- Formule 1 : Essentiel -->
-                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg transition">
-                    <h5 class="text-xl font-bold mb-2">Formule Essentiel</h5>
-                    <div class="text-4xl font-extrabold text-gray-900 mb-4">15$<span class="text-lg text-gray-500 font-medium">/ mois</span></div>
-                    <p class="text-gray-600 mb-6 text-sm">Idéal pour : petits ménages, appartements individuels.</p>
-                    <ul class="space-y-4 mb-8 text-sm text-gray-700">
+                <div class="bg-white p-8 rounded-3xl border border-[#E8E8E8] shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+
+                    <h5 class="text-2xl font-bold text-[#0D4B4A] mb-2">
+                        Formule Essentiel
+                    </h5>
+
+                    <div class="text-4xl font-bold text-[#136A33] mb-4">
+                        15$<span class="text-lg text-[#0D4B4A]/60 font-medium">/ mois</span>
+                    </div>
+
+                    <p class="text-[#0D4B4A]/80 mb-6 text-md font-normal">
+                        Idéal pour : petits ménages, appartements individuels.
+                    </p>
+
+                    <ul class="space-y-4 mb-8 text-md text-[#0D4B4A]">
                         <li class="flex items-center">✅ 1 à 2 collectes / semaine</li>
                         <li class="flex items-center">✅ Sacs écologiques inclus</li>
                         <li class="flex items-center">✅ Accès client 24/7</li>
                     </ul>
-                    <a href="#contact" class="block text-center py-3 px-6 rounded-xl border-2 border-green-600 text-green-600 font-bold hover:bg-green-600 hover:text-white transition">Choisir</a>
+
+                    <a href="#contact"
+                    class="block text-center py-3 px-6 rounded-xl border-2 border-[#136A33] text-[#136A33] font-medium hover:bg-[#136A33] hover:text-white transition duration-300">
+                        Choisir
+                    </a>
+
                 </div>
 
                 <!-- Formule 2 : Avancé (Mise en avant) -->
-                <div class="bg-green-600 p-8 rounded-3xl shadow-xl transform md:-translate-y-4 text-white">
-                    <span class="bg-white text-green-600 text-xs font-bold px-3 py-1 rounded-full uppercase">Populaire</span>
-                    <h5 class="text-xl font-bold mt-4 mb-2">Formule Avancé</h5>
-                    <div class="text-4xl font-extrabold mb-4">25$<span class="text-lg text-green-100 font-medium">/ mois</span></div>
-                    <p class="text-green-50 mb-6 text-sm">Pour les familles et maisons familiales.</p>
-                    <ul class="space-y-4 mb-8 text-sm text-green-50">
-                        <li class="flex items-center">✅ 3 collectes / semaine</li>
+                <div class="bg-[#136A33] p-8 rounded-3xl shadow-2xl transform md:-translate-y-4 text-white">
+
+                    <h5 class="text-2xl font-bold mt-4 mb-2">
+                        Formule Avancé
+                    </h5>
+
+                    <div class="text-4xl font-bold mb-4">
+                        30$<span class="text-lg text-[#E8E8E8] font-medium">/ mois</span>
+                    </div>
+
+                    <p class="text-[#E8E8E8] mb-6 text-md">
+                        Pour les familles et maisons familiales.
+                    </p>
+
+                    <ul class="space-y-4 mb-8 text-md text-[#E8E8E8]">
+                        <li class="flex items-center">✅ 2 à 3 collectes / semaine</li>
                         <li class="flex items-center">✅ Sacs écologiques inclus</li>
                         <li class="flex items-center">✅ Désinfection incluse</li>
                         <li class="flex items-center">✅ Suivi complet via site</li>
                     </ul>
-                    <a href="#contact" class="block text-center py-3 px-6 rounded-xl bg-white text-green-600 font-bold hover:bg-gray-100 transition">Choisir</a>
+
+                    <a href="#contact"
+                    class="block text-center py-3 px-6 rounded-xl bg-[#64B331] text-white font-medium hover:bg-white hover:text-[#136A33] transition duration-300">
+                        Choisir
+                    </a>
+
                 </div>
 
                 <!-- Formule 3 : Premium -->
-                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg transition">
-                    <h5 class="text-xl font-bold mb-2">Formule Premium</h5>
-                    <div class="text-4xl font-extrabold text-gray-900 mb-4">40$<span class="text-lg text-gray-500 font-medium">/ mois</span></div>
-                    <p class="text-gray-600 mb-6 text-sm">Pour un confort total et gestion avancée.</p>
-                    <ul class="space-y-4 mb-8 text-sm text-gray-700">
-                        <li class="flex items-center">✅ Collectes illimitées</li>
+                <div class="bg-white p-8 rounded-3xl border border-[#E8E8E8] shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+
+                    <h5 class="text-2xl font-bold text-[#0D4B4A] mb-2">
+                        Formule Premium
+                    </h5>
+
+                    <div class="text-4xl font-bold text-[#136A33] mb-4">
+                        40$<span class="text-lg text-[#0D4B4A]/60 font-medium">/ mois</span>
+                    </div>
+
+                    <p class="text-[#0D4B4A]/80 mb-6 text-md font-normal">
+                        Pour un confort total et gestion avancée.
+                    </p>
+
+                    <ul class="space-y-4 mb-8 text-md text-[#0D4B4A]">
+                        <li class="flex items-center">✅ 4 collectes / semaine</li>
                         <li class="flex items-center">✅ Sacs écologiques inclus</li>
                         <li class="flex items-center">✅ Désinfection mensuelle</li>
                         <li class="flex items-center">✅ Support VIP prioritaire</li>
                     </ul>
-                    <a href="#contact" class="block text-center py-3 px-6 rounded-xl border-2 border-green-600 text-green-600 font-bold hover:bg-green-600 hover:text-white transition">Choisir</a>
+
+                    <a href="#contact"
+                    class="block text-center py-3 px-6 rounded-xl border-2 border-[#136A33] text-[#136A33] font-medium hover:bg-[#136A33] hover:text-white transition duration-300">
+                        Choisir
+                    </a>
+
                 </div>
 
             </div>
         </div>
     </section>
-    
+
+    <!-- Formules pour entreprise -->
+    <section class="py-20 bg-[#E8E8E8] font-sans">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Titre -->
+            <div class="text-center mb-16">
+                <h4 class="text-3xl md:text-4xl font-bold text-[#0D4B4A]">
+                    Formules pour entreprise
+                </h4>
+            </div>
+
+            <!-- Grille des prix -->
+            <div class="grid md:grid-cols-3 gap-8 items-stretch">
+
+                <!-- Business -->
+                <div class="h-full bg-white p-8 rounded-3xl border border-[#E8E8E8] shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+
+                    <h5 class="text-2xl font-bold text-center text-[#0D4B4A] mb-6">
+                        Business
+                    </h5>
+
+                    <div class="text-4xl font-bold text-[#136A33] mb-4">
+                        100$
+                        <span class="text-lg text-[#0D4B4A]/60 font-medium">/ mois</span>
+                    </div>
+
+                    <p class="text-[#0D4B4A]/80 mb-8 text-md leading-relaxed flex-grow">
+                        Idéal pour boutiques et pharmacies.
+                    </p>
+
+                    <a href="#contact"
+                    class="block text-center py-3 px-6 rounded-xl border-2 border-[#136A33] text-[#136A33] font-medium hover:bg-[#136A33] hover:text-white transition duration-300">
+                        Choisir
+                    </a>
+
+                </div>
+
+                <!-- Corporate -->
+                <div class="h-full bg-[#136A33] border border-[#64B331] p-8 rounded-3xl shadow-2xl md:-translate-y-4 text-white flex flex-col">
+
+                    <h5 class="text-2xl text-center font-bold mb-6">
+                        Corporate
+                    </h5>
+
+                    <div class="text-2xl font-bold mb-4">
+                        Sur devis
+                        <span class="text-lg text-[#E8E8E8] font-medium">/ mois</span>
+                    </div>
+
+                    <p class="text-[#E8E8E8] mb-8 text-md leading-relaxed flex-grow">
+                        Pour restaurants, hôtels et écoles. Inclut audit d'hygiène et formation du personnel.
+                    </p>
+
+                    <a href="#contact"
+                    class="block text-center py-3 px-6 rounded-xl bg-[#64B331] text-white font-medium hover:bg-white hover:text-[#136A33] transition duration-300">
+                        Choisir
+                    </a>
+
+                </div>
+
+                <!-- Entreprise Pro -->
+                <div class="h-full bg-white p-8 rounded-3xl border border-[#E8E8E8] shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+
+                    <h5 class="text-2xl font-bold text-center text-[#0D4B4A] mb-6">
+                        Entreprise Pro
+                    </h5>
+
+                    <div class="text-3xl font-bold text-[#136A33] mb-4">
+                        Sur devis
+                        <span class="text-lg text-[#0D4B4A]/60 font-medium">/ mois</span>
+                    </div>
+
+                    <p class="text-[#0D4B4A]/80 mb-8 text-md leading-relaxed flex-grow">
+                        Gestion complète sur site avec camion dédié pour grandes industries.
+                    </p>
+
+                    <a href="#contact"
+                    class="block text-center py-3 px-6 rounded-xl border-2 border-[#136A33] text-[#136A33] font-medium hover:bg-[#136A33] hover:text-white transition duration-300">
+                        Choisir
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Services et Contact -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-[#E8E8E8] font-sans">
         <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-white p-12 md:p-16 rounded-[2rem] shadow-lg border border-gray-100 text-center">
-                
+            <div class="bg-white p-12 md:p-16 rounded-[2rem] shadow-xl border border-[#E8E8E8] text-center">
+
                 <!-- Titre et Texte -->
-                <h4 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+                <h4 class="text-3xl md:text-4xl font-bold text-[#0D4B4A] mb-6">
                     Une solution de propreté adaptée à vos besoins
                 </h4>
-                <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+
+                <p class="text-lg text-[#0D4B4A]/80 mb-10 max-w-2xl mx-auto font-normal leading-relaxed">
                     Ne laissez plus les déchets encombrer votre quotidien. Découvrez nos solutions professionnelles et rejoignez les nombreux Kinois qui font confiance à GreenKin pour un environnement sain.
                 </p>
 
                 <!-- Boutons -->
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
+
                     <!-- Bouton Principal -->
-                    <a href="greenkin_services.html" class="bg-green-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-700 transition shadow-lg transform hover:-translate-y-1">
+                    <a href="greenkin_services.html"
+                    class="bg-[#136A33] text-white px-8 py-4 rounded-xl font-medium hover:bg-[#64B331] transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                         Découvrir nos services
                     </a>
+
                     <!-- Bouton Secondaire -->
-                    <a href="greenkin_contact.html" class="bg-white border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-xl font-bold hover:border-green-600 hover:text-green-600 transition">
+                    <a href="greenkin_contact.html"
+                    class="bg-white border-2 border-[#136A33] text-[#136A33] px-8 py-4 rounded-xl font-medium hover:bg-[#136A33] hover:text-white transition duration-300">
                         Nous contacter
                     </a>
+
                 </div>
-                
+
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-950 text-white pt-20 pb-10">
+    <footer class="bg-[#0D4B4A] text-white pt-20 pb-10 font-sans">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             
             <!-- À propos -->
             <div>
-                <h3 class="text-2xl font-bold mb-6 text-green-500">GreenKin</h3>
-                <p class="text-gray-400 leading-relaxed text-justify">
+                <h3 class="text-2xl font-bold mb-6 text-[#64B331]">GreenKin</h3>
+                <p class="text-[#E8E8E8]/80 leading-relaxed text-justify font-normal">
                     La branche innovante d'Espoir Afrique. Nous transformons la gestion des déchets à Kinshasa grâce à des solutions technologiques et durables pour une ville plus propre.
                 </p>
             </div>
@@ -321,61 +531,72 @@
             <!-- Navigation -->
             <div>
                 <h3 class="text-lg font-bold mb-6 text-white">Navigation</h3>
-                <ul class="space-y-3 text-gray-400">
-                    <li><a href="#" class="hover:text-green-500 transition">Accueil</a></li>
-                    <li><a href="#" class="hover:text-green-500 transition">Nos offres</a></li>
-                    <li><a href="#" class="hover:text-green-500 transition">Services</a></li>
-                    <li><a href="#" class="hover:text-green-500 transition">Contact</a></li>
+                <ul class="space-y-3 text-[#E8E8E8]/80">
+                    <li><a href="#" class="hover:text-[#64B331] transition duration-300">Accueil</a></li>
+                    <li><a href="#" class="hover:text-[#64B331] transition duration-300">Nos offres</a></li>
+                    <li><a href="#" class="hover:text-[#64B331] transition duration-300">Services</a></li>
+                    <li><a href="#" class="hover:text-[#64B331] transition duration-300">Contact</a></li>
                 </ul>
             </div>
 
             <!-- Légal -->
             <div>
                 <h3 class="text-lg font-bold mb-6 text-white">Légal</h3>
-                <ul class="space-y-3 text-gray-400">
-                    <li><a href="#" class="hover:text-green-500 transition">Mentions légales</a></li>
-                    <li><a href="#" class="hover:text-green-500 transition">Politique de confidentialité</a></li>
+                <ul class="space-y-3 text-[#E8E8E8]/80">
+                    <li><a href="#" class="hover:text-[#64B331] transition duration-300">Mentions légales</a></li>
+                    <li><a href="#" class="hover:text-[#64B331] transition duration-300">Politique de confidentialité</a></li>
                 </ul>
             </div>
 
             <!-- Contact complet -->
             <div>
                 <h3 class="text-lg font-bold mb-6 text-white">Contactez-nous</h3>
-                <div class="space-y-4 text-gray-400 text-sm">
+
+                <div class="space-y-4 text-[#E8E8E8]/80 text-sm">
+
                     <p class="flex items-start">
-                        <span class="mr-3 text-green-500">📍</span> 
+                        <span class="mr-3 text-[#64B331]">📍</span>
                         <span>Commune de Lingwala, Quartier Singa-Mopepe, Avenue Tshuapa, n° 221/B, Kinshasa, RDC</span>
                     </p>
+
                     <p class="flex items-center">
-                        <span class="mr-3 text-green-500">📞</span> 
-                        <a href="tel:+243983671853" class="hover:text-green-500 transition">+243 983 671 853</a>
+                        <span class="mr-3 text-[#64B331]">📞</span>
+                        <a href="tel:+243983671853" class="hover:text-[#64B331] transition duration-300">
+                            +243 983 671 853
+                        </a>
                     </p>
+
                     <p class="flex items-center">
-                        <span class="mr-3 text-green-500">✉️</span> 
-                        <a href="mailto:info@espoir-afrique.com" class="hover:text-green-500 transition">info@espoir-afrique.com</a>
+                        <span class="mr-3 text-[#64B331]">✉️</span>
+                        <a href="mailto:info@espoir-afrique.com" class="hover:text-[#64B331] transition duration-300">
+                            info@espoir-afrique.com
+                        </a>
                     </p>
+
                 </div>
-                
+
                 <!-- Réseaux -->
                 <div class="flex space-x-4 mt-8">
-                    <!-- Facebook -->
-                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white hover:bg-green-600 transition-all duration-300">
-                        <i class="fab fa-facebook-f"></i> <!-- Assurez-vous d'avoir FontAwesome ou utilisez des SVG -->
+
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#136A33] text-white hover:bg-[#64B331] transition-all duration-300 shadow-md">
+                        <i class="fab fa-facebook-f"></i>
                     </a>
-                    <!-- Instagram -->
-                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white hover:bg-green-600 transition-all duration-300">
+
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#136A33] text-white hover:bg-[#64B331] transition-all duration-300 shadow-md">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <!-- Twitter -->
-                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white hover:bg-green-600 transition-all duration-300">
+
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#136A33] text-white hover:bg-[#64B331] transition-all duration-300 shadow-md">
                         <i class="fab fa-twitter"></i>
                     </a>
+
                 </div>
+
             </div>
         </div>
 
         <!-- Copyright -->
-        <div class="max-w-7xl mx-auto px-6 border-t border-gray-800 pt-8 text-center text-gray-600 text-sm">
+        <div class="max-w-7xl mx-auto px-6 border-t border-white/10 pt-8 text-center text-[#E8E8E8]/70 text-sm">
             <p>&copy; 2026 Espoir Afrique - GreenKin. Tous droits réservés.</p>
         </div>
     </footer>

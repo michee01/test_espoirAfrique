@@ -8,6 +8,26 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     
@@ -292,6 +312,11 @@
         </div>
     </section>
 
+    <a href="https://wa.me/+243983671853" class="whatsapp-float group" target="_blank">
+        <span class="text-xl mr-2">💬</span> 
+        <span class="text-xs uppercase tracking-tighter">WhatsApp</span>
+    </a>
+
     <!-- Footer -->
     <footer class="bg-[#0D4B4A] text-white pt-20 pb-10 font-sans">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
@@ -308,10 +333,10 @@
             <div>
                 <h3 class="text-lg font-bold mb-6 text-white">Navigation</h3>
                 <ul class="space-y-3 text-[#E8E8E8]/80">
-                    <li><a href="#" class="hover:text-[#64B331] transition duration-300">Accueil</a></li>
-                    <li><a href="#" class="hover:text-[#64B331] transition duration-300">Nos offres</a></li>
-                    <li><a href="#" class="hover:text-[#64B331] transition duration-300">Services</a></li>
-                    <li><a href="#" class="hover:text-[#64B331] transition duration-300">Contact</a></li>
+                    <li><a href="greenkin.html" class="hover:text-[#64B331] transition duration-300">Accueil</a></li>
+                    <li><a href="greenkin_offres.html" class="hover:text-[#64B331] transition duration-300">Nos offres</a></li>
+                    <li><a href="greenkin_services.html" class="hover:text-[#64B331] transition duration-300">Services</a></li>
+                    <li><a href="greenkin_contact.html" class="hover:text-[#64B331] transition duration-300">Contact</a></li>
                 </ul>
             </div>
 
@@ -353,15 +378,19 @@
 
                 <!-- Réseaux -->
                 <div class="flex space-x-4 mt-8">
+
                     <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#136A33] text-white hover:bg-[#64B331] transition-all duration-300 shadow-md">
                         <i class="fab fa-facebook-f"></i>
                     </a>
+
                     <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#136A33] text-white hover:bg-[#64B331] transition-all duration-300 shadow-md">
                         <i class="fab fa-instagram"></i>
                     </a>
+
                     <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#136A33] text-white hover:bg-[#64B331] transition-all duration-300 shadow-md">
                         <i class="fab fa-twitter"></i>
                     </a>
+
                 </div>
 
             </div>
@@ -372,7 +401,6 @@
             <p>&copy; 2026 Espoir Afrique - GreenKin. Tous droits réservés.</p>
         </div>
     </footer>
-
 
 </body>
 </html>
